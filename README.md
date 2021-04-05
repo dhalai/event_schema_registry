@@ -2,6 +2,8 @@
 
 This repository is an example of how to make event schema registry for JSON schema events using only github. The general idea - how to share schemas across different services plus how to validate data for specific events.
 
+Existing schemas are related to p_jira async architecture course project
+
 ## Setup
 ### Ruby
 Add this line into your Gemfile:
