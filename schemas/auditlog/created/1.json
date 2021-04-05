@@ -1,23 +1,38 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
 
-  "title": "Payments.DailyPaymentCreated.v1",
-  "description": "json schema for payments daily payment created event (version 1)",
+  "title": "Auditlog.Created.v1",
+  "description": "json schema for auditlog created event (version 1)",
 
   "definitions": {
     "event_data": {
       "type": "object",
       "properties": {
+        "public_id": {
+          "type": "string"
+        },
         "user_id": {
           "type": "string"
         },
-        "payment": {
-          "type": "string"
+        "task_id": {
+          "anyOf": [
+            { "type": "string" },
+            { "type": "null" }
+          ]
+        },
+        "debit": {
+          "type": "integer"
+        },
+        "credit": {
+          "type": "integer"
         }
       },
       "required": [
+        "public_id",
         "user_id",
-        "payment"
+        "task_id",
+        "debit",
+        "credit"
       ]
     }
   },
