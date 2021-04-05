@@ -11,16 +11,7 @@
         "public_id": {
           "type": "string"
         },
-        "full_name": {
-          "type": "string"
-        },
         "role": {
-          "type": "string"
-        },
-        "phone_number": {
-          "type": "string"
-        },
-        "slack_account": {
           "type": "string"
         }
       },
